@@ -3,7 +3,7 @@ use teloxide::prelude::*;
 #[tokio::main]
 async fn main() {
     pretty_env_logger::init();
-    log::info!("Starting throw dice bot...");
+    log::info!("Very small size of image");
 
     let bot = Bot::from_env();
 

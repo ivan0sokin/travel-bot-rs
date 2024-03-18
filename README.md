@@ -20,4 +20,8 @@ And then run it with desired port and your Telegram bot token:
 docker run -d -e TELOXIDE_TOKEN={TOKEN} travel-bot-rs
 ```
 
-If you want to see some logs you can run it not detached (i.e. without ```-d```) and add ```-e RUST_LOG=trace``` option.
+If you want to see some logs you can run it like this:
+
+```sh
+docker run -e RUST_LOG=trace -e TELOXIDE_TOKEN={TOKEN} travel-bot-rs
+```

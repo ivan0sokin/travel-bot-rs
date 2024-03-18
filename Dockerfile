@@ -18,7 +18,11 @@ RUN cd target
 RUN rm ./target/release/deps/travel_bot_rs*
 RUN cargo build --release
 
-FROM rust:1.76.0
+FROM debian:bookworm-slim
+
+RUN apt update
+RUN apt install -y --no-install-recommends ca-certificates
+RUN update-ca-certificates
 
 # copy the build artifact from the build stage
 COPY --from=build /travel-bot-rs/target/release/travel-bot-rs .
