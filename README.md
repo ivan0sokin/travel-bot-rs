@@ -6,12 +6,11 @@ Now it is a dice bot.
 Docker
 
 ## How to run bot
-Before you need to clone the repository and compile it, so do like this:
+Before you need to clone the repository:
 
 ```sh
 git clone https://github.com/ivan0sokin/travel-bot-rs.git
 cd travel-bot-rs
-docker build -t travel-bot-rs .
 ```
 
 Then you need to rename file ```.env.sample``` to ```.env``` and enter your bot token. \
