@@ -14,7 +14,7 @@ cd travel-bot-rs
 docker build -t travel-bot-rs .
 ```
 
-Then you need to change file ```.env.sample``` to ```.env``` and enter your bot token. \
+Then you need to rename file ```.env.sample``` to ```.env``` and enter your bot token. \
 After that type:
 
 ```sh
