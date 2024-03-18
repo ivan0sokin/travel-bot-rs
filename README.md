@@ -14,14 +14,9 @@ cd travel-bot-rs
 docker build -t travel-bot-rs .
 ```
 
-And then run it with desired port and your Telegram bot token:
+Then you need to change file ```.env.sample``` to ```.env``` and enter your bot token. \
+After that type:
 
 ```sh
-docker run -d -e TELOXIDE_TOKEN={TOKEN} travel-bot-rs
-```
-
-If you want to see some logs you can run it like this:
-
-```sh
-docker run -e RUST_LOG=trace -e TELOXIDE_TOKEN={TOKEN} travel-bot-rs
+docker-compose up
 ```
